@@ -69,11 +69,11 @@ public class OperationsTest {
     @Test
     public void MultiplicationEvaluate_TwoTimeNegativeThree_MultiplyTheNumbers(){
         Operand op1 = new Operand(2);
-        Operand op2 = new Operand(-4);
+        Operand op2 = new Operand(-3);
         Multiplication operation = new Multiplication();
         Operand result = operation.evaluate(op1, op2);
 
-        assertEquals(-8 , result.getValue());
+        assertEquals(-6 , result.getValue());
     }
     @Test
     public void MultiplicationEvaluate_NegativeTwoTimeNegativeThree_MultiplyTheNumbers(){
